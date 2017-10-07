@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="aarnav100.developer.vistara.BarcodeCaptureActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/person"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_weight="1"
+                android:text="Mr Aarnav Jindal"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <TextView
+                android:layout_weight="1"
+                android:text="Delhi , India"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:background="@android:color/white"
+        android:textSize="25dp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:text="Flight Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <aarnav100.developer.vistara.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </aarnav100.developer.vistara.CameraSourcePreview>
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"/>
+    <TextView
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"
+        android:text="Expected Flight Arrival Time : 23:00"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"
+        android:text="Expected Flight Travel Time : 11 hrs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_margin="10dp"
+        android:textColor="@android:color/black"
+        android:text="Current Status : Waiting for passengers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_margin="10dp"
+        android:text="Scan Again"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

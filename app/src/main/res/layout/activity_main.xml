@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="aarnav100.developer.vistara.MainActivity">
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/track"
+        android:visibility="gone"
+        android:src="@drawable/track"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextureView
+        android:id="@+id/texture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:visibility="gone"
+        android:src="@drawable/info"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/info" />
+    <ImageView
+        android:visibility="gone"
+        android:src="@drawable/fire"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/fire" />
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:src="@drawable/medical"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/medical"/>
+    <ImageView
+        android:src="@drawable/bell"
+        android:layout_margin="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/bell" />
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout">
+        <LinearLayout
+            android:gravity="end"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent">
+            <TextView
+                android:padding="10dp"
+                android:gravity="center"
+                android:text="Hi , I am VisBot"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rect"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <pl.droidsonroids.gif.GifImageView
+            android:src="@drawable/bot"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="80dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:weightSum="4"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+        <ImageView
+            android:id="@+id/map"
+            android:src="@mipmap/track"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/people"
+            android:src="@mipmap/people"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@mipmap/commercial"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/flight"
+            android:src="@mipmap/flight"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>
